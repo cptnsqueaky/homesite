@@ -2,8 +2,8 @@
     body {
         margin: 0;
         padding: 0;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: rgb(245, 229, 208);
+        font-family: 'Dosis', 'Roboto', sans-serif;
+        background-color: rgb(100, 69, 54);
         display: grid;
         grid-template-columns: 10% 90%;
         grid-template-rows: auto;
@@ -20,7 +20,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
-        background-color: hotpink;
+        background-color: rgb(52, 213, 127);
         height: 100%;
         text-align: center;
     }
@@ -31,7 +31,7 @@
         text-decoration: none;
     }    
     .navbar a:hover {
-        color: grey;
+        transform: scale(1.2);
     }
 }
 
@@ -39,8 +39,8 @@
     body {
         margin: 0;
         padding: 0;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: rgb(245, 229, 208);
+        font-family: 'Dosis', 'Roboto', sans-serif;
+        background-color: rgb(100, 69, 54);
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto;
@@ -57,9 +57,9 @@
     .navbar{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        background-color: hotpink;
+        background-color: rgb(52, 213, 127);
         margin: 0;
         padding: 0;
         width: 100%;
@@ -69,7 +69,7 @@
     }
     .navbar a{
         color: white;
-        padding: 10px;
+        padding: 10px 20px;
         text-decoration: none;
     }  
     .navbar a:hover {
@@ -85,23 +85,31 @@ main{
     grid-area: main;
 }
 
+h2 {
+    font-weight:600;
+    color: #FAFAFA;
+}
+
 /*Card Content*/
 .cardContent {
     padding: 5px;
 }
 
 .cardContent h3 {
+    font-weight:600;
     font-size: larger;
     text-align: center;
 }
 
 .cardContent h4 {
+    font-weight:600;
     font-size: medium;
     text-align: center;
 }
 
 .cardContent h5 {
-    font-size: x-small;
+    font-weight:300;
+    font-size: small;
     text-align: center;
 }
 
@@ -114,23 +122,6 @@ h2 {
     text-align: center;
 }
 
-/*Education section*/
-.eduContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.eduCard {
-    background: linear-gradient(45deg, rgba(251,246,63,1) 0%, rgba(105,255,40,1) 100%);
-    width: 400px;
-    box-shadow: 0 0 10px rgb(193, 253, 157);
-    border: 5px solid rgb(126, 247, 70);
-    border-radius: 10px;
-    margin: 10px;
-}
-
 /*Employment section*/
 .employmentContainer{
     display: flex;
@@ -140,16 +131,34 @@ h2 {
 }
 
 .employmentCard {
+    background: #EBEBEB;
     width: 400px;
-    box-shadow: 0 0 10px rgb(193, 253, 157);
-    background: linear-gradient(45deg, rgba(251,246,63,1) 0%, rgba(105,255,40,1) 100%);
-    border: 5px solid rgb(126, 247, 70);
+    box-shadow: 7px 7px 5px rgb(0, 0, 0);
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/*Education section*/
+.eduContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.eduCard {
+    background: #EBEBEB;
+    width: 400px;
+    box-shadow: 7px 7px 5px rgb(0, 0, 0);
+    border: 0;
     border-radius: 10px;
     margin: 10px;
 }
 
 /*Skill section*/
 .skillContainer {
+    color: #EBEBEB;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -166,10 +175,10 @@ h2 {
 }
 
 .projectCard {
+    background: #EBEBEB;
     width: 400px;
-    box-shadow: 0 0 10px rgb(193, 253, 157);
-    background: linear-gradient(45deg, rgba(251,246,63,1) 0%, rgba(105,255,40,1) 100%);
-    border: 5px solid rgb(126, 247, 70);
+    box-shadow: 7px 7px 5px rgb(0, 0, 0);
+    border: 0;
     border-radius: 10px;
     margin: 10px;
 }
